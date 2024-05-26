@@ -1,0 +1,11 @@
+/home/chris/Área de Trabalho/compiladores_T2/alguma-lexico/src/main/java/br/ufscar/dc/compiladores/alguma/lexico/ALSemanticoUtils.java
+/home/chris/Área de Trabalho/compiladores_T2/alguma-lexico/src/main/java/br/ufscar/dc/compiladores/alguma/lexico/AlgumaLexerSemantico.java
+/home/chris/Área de Trabalho/compiladores_T2/alguma-lexico/src/main/java/br/ufscar/dc/compiladores/alguma/lexico/Principal.java
+/home/chris/Área de Trabalho/compiladores_T2/alguma-lexico/target/generated-sources/antlr4/br/ufscar/dc/compiladores/alguma/lexico/AlgumaLexerVisitor.java
+/home/chris/Área de Trabalho/compiladores_T2/alguma-lexico/target/generated-sources/antlr4/br/ufscar/dc/compiladores/alguma/lexico/AlgumaLexerListener.java
+/home/chris/Área de Trabalho/compiladores_T2/alguma-lexico/target/generated-sources/antlr4/br/ufscar/dc/compiladores/alguma/lexico/AlgumaLexerBaseListener.java
+/home/chris/Área de Trabalho/compiladores_T2/alguma-lexico/src/main/java/br/ufscar/dc/compiladores/alguma/lexico/TabelaDeSimbolos.java
+/home/chris/Área de Trabalho/compiladores_T2/alguma-lexico/src/main/java/br/ufscar/dc/compiladores/alguma/lexico/Escopos.java
+/home/chris/Área de Trabalho/compiladores_T2/alguma-lexico/target/generated-sources/antlr4/br/ufscar/dc/compiladores/alguma/lexico/AlgumaLexerBaseVisitor.java
+/home/chris/Área de Trabalho/compiladores_T2/alguma-lexico/target/generated-sources/antlr4/br/ufscar/dc/compiladores/alguma/lexico/AlgumaLexerLexer.java
+/home/chris/Área de Trabalho/compiladores_T2/alguma-lexico/target/generated-sources/antlr4/br/ufscar/dc/compiladores/alguma/lexico/AlgumaLexerParser.java
