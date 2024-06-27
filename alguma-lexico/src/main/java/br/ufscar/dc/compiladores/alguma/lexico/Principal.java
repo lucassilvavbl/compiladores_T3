@@ -1,8 +1,12 @@
+/*
+Alunos: 
+Christian Coronel da Silva Polli - 798083
+
+*/
 
 package br.ufscar.dc.compiladores.alguma.lexico;
 
 // Importações básicas para o funcionamento do programa.
-import br.ufscar.dc.compiladores.alguma.lexico.AlgumaLexerParser.ProgramaContext;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.FileWriter;
@@ -13,22 +17,27 @@ import org.antlr.v4.runtime.CommonTokenStream;
 public class Principal {
 
     public static void main(String args[]) throws IOException {
+
+        // Inicialização da leitura e escrita em arquivo.
         try (PrintWriter pw = new PrintWriter(new FileWriter(args[1]))) {
             try {
                 CharStream cs = CharStreams.fromFileName(args[0]);
                 
                 // Inicialização do analisador léxico.
-                AlgumaLexerLexer lexer = new AlgumaLexerLexer(cs);
+                AlgumaGramT3Lexer lexer = new AlgumaGramT3Lexer(cs);
                 CommonTokenStream tokens = new CommonTokenStream(lexer);
                 
                 // Inicialização do analisador sintático.
-                AlgumaLexerParser parser = new AlgumaLexerParser(tokens);
-                ProgramaContext arvore = parser.programa();
-                AlgumaLexerSemantico t3s = new AlgumaLexerSemantico();
+                AlgumaGramT3Parser parser = new AlgumaGramT3Parser(tokens);
+                AlgumaGramT3Parser.ProgramaContext arvore = parser.programa();
+                AlgumaT3Semantico t3Semantico = new AlgumaT3Semantico();
                 
                 // Inicialização do programa.
-                t3s.visitPrograma(arvore);
-                ALSemanticoUtils.errosSemanticos.forEach((s) -> pw.println(s));
+                t3Semantico.visitPrograma(arvore);
+                
+                // Verifica a existência de erros, imprime todos os que foram identificados
+                // e encerra a execução do analisador.
+                AlgumaT3SemanticoUtils.errosSemanticos.forEach((s) -> pw.println(s));
                 pw.println("Fim da compilacao");
                 pw.close();                
             } catch (RuntimeException e) {
