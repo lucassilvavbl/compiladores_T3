@@ -8,10 +8,12 @@ public class TabelaDeSimbolos {
     private final Map<String, EntradaTabelaDeSimbolos> tabela;
     
     public TabelaDeSimbolos() {
+        
         this.tabela = new HashMap<>();
     }
 
     public enum TipoAlguma {
+
         INTEIRO,
         REAL,
         LITERAL,
