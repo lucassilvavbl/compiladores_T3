@@ -1,14 +1,15 @@
 package br.ufscar.dc.compiladores.alguma.lexico;
 
-import java.util.HashMap;
+
 import java.util.Map;
+import java.util.HashMap;
 
 public class TabelaDeSimbolos {
 
     private final Map<String, EntradaTabelaDeSimbolos> tabela;
     
     public TabelaDeSimbolos() {
-        
+
         this.tabela = new HashMap<>();
     }
 
